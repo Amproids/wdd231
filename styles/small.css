@@ -98,12 +98,12 @@ nav {
 
 #nav-menu a.active {
   background-color: var(--secondary-color);
-  color: white;
+  color: black;
 }
 
 #nav-menu a:hover {
   background-color: var(--secondary-color);
-  color: white;
+  color: black;
 }
 
 /* Main Content */
