@@ -1,0 +1,191 @@
+/* Base styles and typography */
+:root {
+  --primary-color: #2b5797;
+  --secondary-color: #4e91e4;
+  --accent-color: #f2b705;
+  --text-color: #333;
+  --light-bg: #f4f4f4;
+  --font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Navigation - Mobile first (hamburger menu) */
+nav {
+  width: 100%;
+}
+
+#menu-button {
+  display: block;
+  width: 15%;
+  padding: 0.5rem;
+  background-color: var(--light-bg);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#nav-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#nav-menu.open {
+  display: block;
+}
+
+#nav-menu li {
+  margin: 0.3rem 0;
+}
+
+#nav-menu a {
+  display: block;
+  padding: 0.5rem;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#nav-menu a.active {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+#nav-menu a:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Course Cards */
+#courses-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: var(--light-bg);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+/* Style for completed courses */
+.course-card.completed {
+  border-left: 5px solid var(--accent-color);
+  background-color: rgba(242, 183, 5, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}

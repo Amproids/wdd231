@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Andrew L. Parry</title>
+    <meta name="description" content="WDD 231 Web Frontend Development I course homepage for Andrew L. Parry">
+    <meta name="author" content="Andrew L. Parry">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Andrew L. Parry">
+        <span>Andrew L. Parry</span>
+        <nav>
+            <button id="menu-button" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="final/index.html">Final</a></li>
+                <li><a href="https://github.com/Amproids" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/andrewlparry/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>WDD 231: Web Frontend Development I</h2>
+            <p>Welcome to my course homepage for Web Frontend Development I.</p>
+        </section>
+        <section>
+            <h2>Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all-courses">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+            </div>
+            <div id="courses-container">
+                <!-- Course cards will be dynamically inserted here by JavaScript -->
+            </div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+        <section>
+            <h2>Information</h2>
+            <p>This page demonstrates my understanding of HTML, CSS, and JavaScript fundamentals.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Andrew L. Parry, Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
