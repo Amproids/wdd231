@@ -1,0 +1,23 @@
+{
+    "familyName": "Johnson",
+    "dateMoved": "2024-03-15",
+    "numberOfPeople": 3,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "John Johnson",
+            "gender": "male",
+            "birthdate": "1985-07-22"
+        },
+        {
+            "name": "James Johnson",
+            "gender": "male",
+            "birthdate": "2010-04-18"
+        },
+        {
+            "name": "Joanna Johnson",
+            "gender": "female",
+            "birthdate": "2012-11-03"
+        }
+    ]
+}
