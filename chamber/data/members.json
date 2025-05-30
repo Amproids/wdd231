@@ -1,0 +1,155 @@
+[
+    {
+        "name": "Mountain View Auto Repair",
+        "address": "1245 Main Street, Mapleton, UT 84664",
+        "phone": "(801) 555-0123",
+        "website": "https://mountainviewauto.com",
+        "image": "images/mountain-view-auto.jpg",
+        "membershipLevel": 3,
+        "category": "Automotive",
+        "yearEstablished": 2008,
+        "services": [
+            "Auto Repair",
+            "Oil Changes",
+            "Brake Service",
+            "Transmission Work"
+        ],
+        "description": "Full-service automotive repair shop serving Mapleton and surrounding areas for over 15 years."
+    },
+    {
+        "name": "Maple Creek Bakery",
+        "address": "892 Center Street, Mapleton, UT 84664",
+        "phone": "(801) 555-0156",
+        "website": "https://maplecreekbakery.com",
+        "image": "images/maple-creek-bakery.jpg",
+        "membershipLevel": 2,
+        "category": "Food & Dining",
+        "yearEstablished": 2015,
+        "services": [
+            "Fresh Bread",
+            "Custom Cakes",
+            "Pastries",
+            "Catering"
+        ],
+        "description": "Artisan bakery specializing in fresh breads, custom cakes, and delicious pastries made daily."
+    },
+    {
+        "name": "Springville Canyon Dental",
+        "address": "567 East 400 North, Mapleton, UT 84664",
+        "phone": "(801) 555-0189",
+        "website": "https://springvillecanyondental.com",
+        "image": "images/canyon-dental.jpg",
+        "membershipLevel": 3,
+        "category": "Healthcare",
+        "yearEstablished": 2010,
+        "services": [
+            "General Dentistry",
+            "Cosmetic Dentistry",
+            "Orthodontics",
+            "Emergency Care"
+        ],
+        "description": "Comprehensive dental care for the whole family with state-of-the-art technology."
+    },
+    {
+        "name": "Utah Valley Landscaping",
+        "address": "1789 South 1200 West, Mapleton, UT 84664",
+        "phone": "(801) 555-0245",
+        "website": "https://utahvalleylandscaping.com",
+        "image": "images/utah-valley-landscaping.jpg",
+        "membershipLevel": 1,
+        "category": "Home Services",
+        "yearEstablished": 2018,
+        "services": [
+            "Landscape Design",
+            "Irrigation Systems",
+            "Tree Service",
+            "Snow Removal"
+        ],
+        "description": "Professional landscaping services including design, installation, and maintenance."
+    },
+    {
+        "name": "Mapleton Hardware & Feed",
+        "address": "234 West Main Street, Mapleton, UT 84664",
+        "phone": "(801) 555-0167",
+        "website": "https://mapletonhardware.com",
+        "image": "images/mapleton-hardware.jpg",
+        "membershipLevel": 2,
+        "category": "Retail",
+        "yearEstablished": 1995,
+        "services": [
+            "Hardware Supplies",
+            "Animal Feed",
+            "Garden Center",
+            "Tool Rental"
+        ],
+        "description": "Your local hardware store serving Mapleton's farming and home improvement needs since 1995."
+    },
+    {
+        "name": "Red Canyon Real Estate",
+        "address": "445 North State Street, Mapleton, UT 84664",
+        "phone": "(801) 555-0198",
+        "website": "https://redcanyonrealty.com",
+        "image": "images/red-canyon-realty.jpg",
+        "membershipLevel": 3,
+        "category": "Real Estate",
+        "yearEstablished": 2012,
+        "services": [
+            "Residential Sales",
+            "Commercial Properties",
+            "Property Management",
+            "Investment Properties"
+        ],
+        "description": "Premier real estate services helping families find their dream homes in Utah Valley."
+    },
+    {
+        "name": "Canyon Creek Fitness",
+        "address": "678 East Center Street, Mapleton, UT 84664",
+        "phone": "(801) 555-0134",
+        "website": "https://canyoncreekfitness.com",
+        "image": "images/canyon-creek-fitness.jpg",
+        "membershipLevel": 1,
+        "category": "Health & Fitness",
+        "yearEstablished": 2020,
+        "services": [
+            "Personal Training",
+            "Group Classes",
+            "Nutrition Coaching",
+            "Youth Programs"
+        ],
+        "description": "Modern fitness facility offering personal training, group classes, and wellness programs."
+    },
+    {
+        "name": "Pioneer Valley Insurance",
+        "address": "321 South Main Street, Mapleton, UT 84664",
+        "phone": "(801) 555-0212",
+        "website": "https://pioneervalleyinsurance.com",
+        "image": "images/pioneer-valley-insurance.jpg",
+        "membershipLevel": 2,
+        "category": "Insurance & Finance",
+        "yearEstablished": 2005,
+        "services": [
+            "Auto Insurance",
+            "Home Insurance",
+            "Life Insurance",
+            "Business Insurance"
+        ],
+        "description": "Independent insurance agency providing comprehensive coverage options for families and businesses."
+    },
+    {
+        "name": "Wasatch Pet Clinic",
+        "address": "890 West 400 South, Mapleton, UT 84664",
+        "phone": "(801) 555-0176",
+        "website": "https://wasatchpetclinic.com",
+        "image": "images/wasatch-pet-clinic.jpg",
+        "membershipLevel": 1,
+        "category": "Veterinary Services",
+        "yearEstablished": 2017,
+        "services": [
+            "Wellness Exams",
+            "Vaccinations",
+            "Surgery",
+            "Emergency Care"
+        ],
+        "description": "Compassionate veterinary care for your beloved pets with modern facilities and experienced staff."
+    }
+]

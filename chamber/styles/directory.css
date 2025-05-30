@@ -1,0 +1,217 @@
+/* Directory Page Styles */
+
+/* View Controls */
+.view-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.view-controls button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.view-controls button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Members Container - Grid View (Default) */
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Member Cards */
+.member-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    transition: var(--transition);
+    border: 1px solid var(--light-gray);
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.member-card .card-contact-info {
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.member-card .card-contact-info a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.member-card .card-contact-info a:hover {
+    text-decoration: underline;
+}
+
+.member-card .category {
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+}
+
+.member-card .description {
+    color: var(--dark-gray);
+    line-height: 1.5;
+}
+
+/* Membership Level Badge */
+.membership-level {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.membership-level.member {
+    background-color: #833f00;
+    color: white;
+}
+
+.membership-level.silver {
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.membership-level.gold {
+    background-color: #ffce0c;
+    color: var(--dark-gray);
+}
+
+/* List View */
+#members-container.list-view {
+    display: block;
+}
+
+#members-container.list-view .member-card {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-areas: 
+        "image header"
+        "image content";
+    margin-bottom: 1rem;
+    padding: 0.5em;
+}
+
+#members-container.list-view .member-card img {
+    grid-area: image;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+}
+
+#members-container.list-view .member-card h3 {
+    grid-area: header;
+    text-align: center;
+}
+
+#members-container.list-view .member-card > div {
+    grid-column: 2;
+}
+
+#members-container.list-view .member-card .membership-level {
+    grid-column: 3;
+    align-self: start;
+    justify-self: end;
+}
+
+#members-container.list-view .member-card .card-contact-info {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#members-container.list-view .member-card .description {
+    grid-column: 2 /span 3;
+    margin-bottom: 0;
+}
+
+/* Error and Empty States */
+.error,
+.empty {
+    text-align: center;
+    padding: 2rem;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+}
+
+.error {
+    color: var(--accent1-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    #members-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #members-container.list-view .member-card {
+        grid-template-columns: 100px 1fr;
+        gap: 1rem;
+    }
+    
+    #members-container.list-view .member-card img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .view-controls {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-card {
+        padding: 1rem;
+    }
+    
+    .member-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    #members-container.list-view .member-card {
+        grid-template-columns: 80px 1fr;
+        gap: 0.8rem;
+    }
+    
+    #members-container.list-view .member-card img {
+        width: 80px;
+        height: 80px;
+    }
+}
