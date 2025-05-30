@@ -131,13 +131,17 @@ nav a.active {
     color: var(--white);
     font-size: 2rem;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.1rem 0.5rem ;
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
 
 #menu-toggle:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+#menu-toggle.menu-open {
+    transform: rotate(90deg);
 }
 
 /* Dark Mode Toggle */
@@ -148,13 +152,17 @@ nav a.active {
     color: var(--white);
     font-size: 2rem;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.3rem 0.5rem ;
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
 
 #dark-mode:hover {
-     background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#dark-mode.dark-mode {
+    transform: rotate(360deg);
 }
 
 /* Main Content */
@@ -237,10 +245,14 @@ footer {
         display: inline;
     }
 
+    body.menu-open main {
+        margin-top: 256px;
+    }
+
     nav ul {
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 148px;
         left: 0;
         right: 0;
         background-color: var(--accent2-color);

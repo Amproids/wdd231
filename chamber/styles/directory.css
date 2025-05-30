@@ -109,7 +109,7 @@
 
 .membership-level.gold {
     background-color: #ffce0c;
-    color: var(--dark-gray);
+    color: black;
 }
 
 /* List View */
