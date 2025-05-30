@@ -129,10 +129,9 @@ nav a.active {
     background: none;
     border: none;
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
-    padding: 0.7rem 0.7rem;
-    padding-top: 0;
+    padding: 0.5rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
@@ -149,7 +148,7 @@ nav a.active {
     color: var(--white);
     font-size: 2rem;
     cursor: pointer;
-    padding: 0.9rem 1rem;
+    padding: 0.5rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
