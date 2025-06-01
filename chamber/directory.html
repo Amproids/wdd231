@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapleton City Chamber of Commerce - Chamber Directory</title>
+    <title>Business Directory | Mapleton City Chamber of Commerce</title>
     <meta name="description" content="Chamber Directory">
     <meta name="author" content="Andrew L. Parry">
     <link rel="icon" href="images/favicon.svg">
@@ -12,30 +12,23 @@
     <meta property="og:description" content="Chamber Directory">
     <meta property="og:image" content="https://amproids.github.io/wdd231/chamber/images/favicon.svg">
     <meta property="og:url" content="https://amproids.github.io/wdd231/chamber/directory.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/directory.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <!-- Load Font Awesome CSS non-render-blocking using media attribute-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"></noscript>
-
-    <!-- Load Google Fonts non-render-blocking using media attribute-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"></noscript>
 </head>
 <body>
     <header>
         <div id="header-logo">
             <img src="images/favicon.svg" alt="Mapleton Logo">
             <div id="header-title">
-                <h2>Mapleton City</h2>
-                <h3>Chamber of Commerce</h3>
+                <p class="header-main">Mapleton City</p>
+                <p>Chamber of Commerce</p>
             </div>
         </div>
         <nav>
@@ -47,8 +40,8 @@
             </ul>
         </nav>
         <div id="menu-buttons">
-            <button id="dark-mode"><i class="fas fa-adjust"></i></button>
-            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+            <img id="dark-mode" src="images/circle-half-stroke.svg" alt="Dark Mode">
+            <img id="menu-toggle" src="images/bars.svg" alt="Menu">
         </div>
     </header>
     <main>
@@ -63,21 +56,27 @@
     </main>
     <footer>
         <div id="footer-contact">
-            <p><b>Mapleton Chamber of Commerce</b></p>
+            <p class="footer-title">Mapleton Chamber of Commerce</p>
             <p>Mapleton, Utah, USA</p>
-            <p>infomapleton@example.com</p>
-            <p>(123) 456-7890</p>
+            <p>info@mapletoncc.org</p>
+            <p>(801) 489-3240</p>
         </div>
         <div id="footer-links">
             <ul>
                 <li>
-                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com" aria-label="Visit Mapleton Chamber on YouTube">
+                        <img src="images/youtube.svg" alt="YouTube">
+                    </a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.twitter.com" aria-label="Follow Mapleton Chamber on Twitter">
+                        <img src="images/twitter.svg" alt="Twitter">
+                    </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com" aria-label="Connect with Mapleton Chamber on LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -88,7 +87,8 @@
             <p id="lastModified"></p>
         </div>
     </footer>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </body>
 </html>

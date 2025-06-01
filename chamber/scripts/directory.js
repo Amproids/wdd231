@@ -4,16 +4,41 @@ const listViewBtn = document.querySelector('#list-view');
 
 let currentView = 'grid';
 
+// Reserve space immediately to prevent CLS
+function initializeContainer() {
+
+    membersContainer.style.minHeight = '600px';
+
+    membersContainer.innerHTML = `
+        <div class="loading-container">
+            <div class="loading-skeleton">
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+        </div>
+    `;
+}
+
 async function getMembers() {
     try {
-        membersContainer.innerHTML = '<h1>Loading members...</h1>';
+        // Initialize container with reserved space first
+        initializeContainer();
+        
         const response = await fetch('data/members.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        console.log(data);
-        displayMembers(data);
+        
+        // Small delay to ensure smooth transition
+        setTimeout(() => {
+            displayMembers(data);
+        }, 100);
+        
     } catch (error) {
         console.error('Error fetching member data:', error);
         membersContainer.innerHTML = '<div class="error">Error loading member data. Please try again later.</div>';
@@ -25,7 +50,11 @@ function displayMembers(data) {
         membersContainer.innerHTML = '<div class="empty">No members found.</div>';
         return;
     }
+    
+    // Clear container and reset min-height to auto
     membersContainer.innerHTML = '';
+    membersContainer.style.minHeight = 'auto';
+    
     data.forEach((member) => {
         const memberCard = document.createElement('div');
         memberCard.classList.add('member-card');
@@ -33,7 +62,6 @@ function displayMembers(data) {
             <div class="membership-level ${getMembershipLevelText(member.membershipLevel)}">
                 ${getMembershipLevelText(member.membershipLevel)}
             </div>
-            <img src="${member.image}" alt="${member.name}">
             <h3>${member.name}</h3>
             <div class="card-contact-info">
                 <p>${member.address}</p>
@@ -59,22 +87,29 @@ function getMembershipLevelText(level) {
 gridViewBtn.addEventListener('click', () => {
     membersContainer.classList.remove('list-view');
     membersContainer.classList.add('grid-view');
+    gridViewBtn.classList.add('active');
+    listViewBtn.classList.remove('active');
     currentView = 'grid';
 });
 
 listViewBtn.addEventListener('click', () => {
     membersContainer.classList.remove('grid-view');
     membersContainer.classList.add('list-view');
+    listViewBtn.classList.add('active');
+    gridViewBtn.classList.remove('active');
     currentView = 'list';
 });
 
-//event listener for changing view size
+// Event listener for changing view size
 window.addEventListener('resize', (event) => {
     if (window.innerWidth < 769 && currentView === 'list') {
         membersContainer.classList.remove('list-view');
         membersContainer.classList.add('grid-view');
+        listViewBtn.classList.remove('active');
+        gridViewBtn.classList.add('active');
         currentView = 'grid';
     }
 })
 
+// Initialize on page load
 getMembers();
