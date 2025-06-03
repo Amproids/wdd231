@@ -1,5 +1,5 @@
 // Weather API for Mapleton, UT
-const API_KEY = '8c45e5c07930e7462edbd1376f62ffea';
+const API_KEY = 'fad817fbf9a4ff89b78af32f2b1327db';
 const CITY = 'Mapleton,UT,US';
 
 // Fetch and display current weather
