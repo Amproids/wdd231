@@ -18,8 +18,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../images/mapleton-hero.jpg') center/cover;
-  opacity: 0.2;
+  background: url('../images/hero.webp') center/cover;
+  opacity: 0.6;
   z-index: 1;
 }
 
