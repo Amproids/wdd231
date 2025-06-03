@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Mapleton City Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Mapleton City Chamber of Commerce - supporting local businesses and community growth in Mapleton, Utah.">
+    <meta name="author" content="Andrew L. Parry">
+    <link rel="icon" href="images/favicon.svg">
+    <meta property="og:title" content="Mapleton City Chamber of Commerce - Home">
+    <meta property="og:description" content="Welcome to the Mapleton City Chamber of Commerce - supporting local businesses and community growth in Mapleton, Utah.">
+    <meta property="og:image" content="https://amproids.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://amproids.github.io/wdd231/chamber/">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <img src="images/favicon.svg" alt="Mapleton Logo">
+            <div id="header-title">
+                <p class="header-main">Mapleton City</p>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <div id="menu-buttons">
+            <img id="dark-mode" src="images/circle-half-stroke.svg" alt="Dark Mode">
+            <img id="menu-toggle" src="images/bars.svg" alt="Menu">
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Mapleton</h1>
+                <p>Where Business Thrives and Community Grows</p>
+                <a href="join.html" class="cta-button">Join Our Chamber</a>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="content-grid">
+            <!-- Current Events Section -->
+            <section id="current-events" class="content-card">
+                <h2>Current Events</h2>
+                <div class="event">
+                    <h3>Annual Business Expo</h3>
+                    <p class="event-date">June 15, 2025</p>
+                    <p>Join us for our biggest networking event of the year! Connect with local businesses and discover new opportunities.</p>
+                </div>
+                <div class="event">
+                    <h3>Chamber Luncheon</h3>
+                    <p class="event-date">June 8, 2025</p>
+                    <p>Monthly networking luncheon featuring guest speaker on digital marketing trends.</p>
+                </div>
+                <a href="discover.html" class="learn-more">View All Events</a>
+            </section>
+
+            <!-- Weather Section -->
+            <section id="weather" class="content-card">
+                <h2>Weather</h2>
+                <div id="current-weather">
+                    <div class="weather-main">
+                        <span id="temperature">Loading...</span>
+                        <div class="weather-info">
+                            <p id="weather-description">Loading weather...</p>
+                            <p class="location">Mapleton, UT</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div class="forecast-container">
+                        <div class="forecast-day">
+                            <p class="day-name">Today</p>
+                            <p class="forecast-temp" id="day1-temp">--°</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="day-name">Tomorrow</p>
+                            <p class="forecast-temp" id="day2-temp">--°</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="day-name">Day 3</p>
+                            <p class="forecast-temp" id="day3-temp">--°</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Spotlights Section -->
+            <section id="spotlights" class="content-card">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container">
+                    <!-- Spotlights will be loaded via JavaScript -->
+                    <div class="loading">Loading member spotlights...</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="footer-contact">
+            <p class="footer-title">Mapleton Chamber of Commerce</p>
+            <p>Mapleton, Utah, USA</p>
+            <p>info@mapletoncc.org</p>
+            <p>(801) 489-3240</p>
+        </div>
+        <div id="footer-links">
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com" aria-label="Visit Mapleton Chamber on YouTube">
+                        <img src="images/youtube.svg" alt="YouTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" aria-label="Follow Mapleton Chamber on Twitter">
+                        <img src="images/twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" aria-label="Connect with Mapleton Chamber on LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Andrew L. Parry</p>
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</body>
+</html>
