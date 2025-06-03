@@ -235,8 +235,8 @@
 }
 
 .spotlight-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-color: var(--accent1-color);
 }
 
@@ -266,14 +266,19 @@
   letter-spacing: 0.5px;
 }
 
-.membership-level.gold {
-  background-color: #FFD700;
-  color: #8B6914;
+.membership-level.member {
+  background-color: #833f00;
+  color: white;
 }
 
 .membership-level.silver {
-  background-color: #C0C0C0;
-  color: #4A4A4A;
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.membership-level.gold {
+  background-color: #ffce0c;
+  color: black;
 }
 
 .contact-info {
