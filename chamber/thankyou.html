@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Mapleton City Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the Mapleton City Chamber of Commerce - your membership application has been received.">
+    <meta name="author" content="Andrew L. Parry">
+    <link rel="icon" href="images/favicon.svg">
+    <meta property="og:title" content="Thank You - Mapleton City Chamber of Commerce">
+    <meta property="og:description" content="Thank you for joining the Mapleton City Chamber of Commerce - your membership application has been received.">
+    <meta property="og:image" content="https://amproids.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://amproids.github.io/wdd231/chamber/thankyou.html">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <img src="images/favicon.svg" alt="Mapleton Logo">
+            <div id="header-title">
+                <p class="header-main">Mapleton City</p>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <div id="menu-buttons">
+            <img id="dark-mode" src="images/circle-half-stroke.svg" alt="Dark Mode">
+            <img id="menu-toggle" src="images/bars.svg" alt="Menu">
+        </div>
+    </header>
+    
+    <main>
+        <h1>Thank You for Joining!</h1>
+        
+        <div class="thank-you-container">
+            <div class="success-message">
+                <div class="success-icon">✓</div>
+                <h2>Your membership application has been received!</h2>
+                <p>We're excited to welcome you to the Mapleton City Chamber of Commerce community. A member of our team will contact you within 2-3 business days to complete your membership setup.</p>
+            </div>
+            
+            <div class="application-summary">
+                <h3>Application Summary</h3>
+                <div class="summary-content">
+                    <div class="summary-item">
+                        <span class="label">Name:</span>
+                        <span class="value" id="display-name">Loading...</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Email:</span>
+                        <span class="value" id="display-email">Loading...</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Phone:</span>
+                        <span class="value" id="display-phone">Loading...</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Business Name:</span>
+                        <span class="value" id="display-business">Loading...</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Application Date:</span>
+                        <span class="value" id="display-date">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="next-steps">
+                <h3>What's Next?</h3>
+                <ul>
+                    <li>Check your email for a confirmation message</li>
+                    <li>A chamber representative will contact you within 2-3 business days</li>
+                    <li>Complete any additional membership requirements</li>
+                    <li>Start enjoying your chamber benefits!</li>
+                </ul>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="discover.html" class="btn btn-secondary">Explore Mapleton</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="footer-contact">
+            <p class="footer-title">Mapleton Chamber of Commerce</p>
+            <p>Mapleton, Utah, USA</p>
+            <p>info@mapletoncc.org</p>
+            <p>(801) 489-3240</p>
+        </div>
+        <div id="footer-links">
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com" aria-label="Visit Mapleton Chamber on YouTube">
+                        <img src="images/youtube.svg" alt="YouTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" aria-label="Follow Mapleton Chamber on Twitter">
+                        <img src="images/twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" aria-label="Connect with Mapleton Chamber on LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Andrew L. Parry</p>
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+</html>
