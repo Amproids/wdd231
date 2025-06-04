@@ -83,6 +83,8 @@ const courseCredits = document.getElementById('total-credits');
 const allCoursesButton = document.getElementById('all-courses');
 const wddCoursesButton = document.getElementById('wdd-courses');
 const cseCoursesButton = document.getElementById('cse-courses');
+const courseModal = document.querySelector("#course-details");
+
 let showOption = 'All';
 
 allCoursesButton.addEventListener('click', () => {
@@ -98,6 +100,10 @@ wddCoursesButton.addEventListener('click', () => {
 cseCoursesButton.addEventListener('click', () => {
     showOption = 'CSE';
     filterCourses();
+});
+
+courseModal.addEventListener('click', () => {
+    courseModal.close();
 });
 
 function filterCourses() {
@@ -119,16 +125,47 @@ function filterCourses() {
         
         courseCard.innerHTML = `
             <h3>${course.title}</h3>
-            <p>${course.description}</p>
             <p>Completed: ${course.completed ? 'Yes' : 'No'}</p>
             <p>Technology: ${course.technology.join(', ')}</p>
         `;
+
+        // Add a click event listener to display the modal
+        courseCard.addEventListener('click', () => {
+            displayModal(course);
+        });
+
         courseContainer.appendChild(courseCard);
     });
     
     // Use reduce to calculate total credits as required
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     courseCredits.textContent = totalCredits;
+}
+
+function displayModal(course) {
+    courseModal.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    
+    courseModal.showModal();
+    
+    // Close button functionality
+    document.getElementById('closeModal').addEventListener('click', () => {
+        courseModal.close();
+    });
+    
+    // Click outside to close
+    courseModal.addEventListener('click', (e) => {
+        if (e.target === courseModal) {
+            courseModal.close();
+        }
+    });
 }
 
 // Initialize the page
