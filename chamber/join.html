@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Mapleton City Chamber of Commerce</title>
+    <meta name="description" content="Join the Mapleton City Chamber of Commerce - become a member and support local businesses in Mapleton, Utah.">
+    <meta name="author" content="Andrew L. Parry">
+    <link rel="icon" href="images/favicon.svg">
+    <meta property="og:title" content="Join - Mapleton City Chamber of Commerce">
+    <meta property="og:description" content="Join the Mapleton City Chamber of Commerce - become a member and support local businesses in Mapleton, Utah.">
+    <meta property="og:image" content="https://amproids.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://amproids.github.io/wdd231/chamber/join.html">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <img src="images/favicon.svg" alt="Mapleton Logo">
+            <div id="header-title">
+                <p class="header-main">Mapleton City</p>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <div id="menu-buttons">
+            <img id="dark-mode" src="images/circle-half-stroke.svg" alt="Dark Mode">
+            <img id="menu-toggle" src="images/bars.svg" alt="Menu">
+        </div>
+    </header>
+    
+    <main>
+        <div class="join-container">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Join the Chamber</legend>
+                    <label class="top">First Name*
+                        <input type="text" name="fname" title="First Name" autocomplete="given-name" required>
+                    </label>
+                    <label class="top">Last Name*
+                        <input type="text" name="lname" title="Last Name" autocomplete="family-name" required>
+                    </label>
+                    <label class="top">Organizational Title
+                        <input type="text" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" minlength="7">
+                    </label>
+                    <label class="top">Email*
+                        <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
+                    </label>
+                    <label class="top">Mobile Phone Number*
+                        <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                    </label>
+                    <label class="top">Business/Organization Name*
+                        <input type="text" name="bname" title="Business Name" autocomplete="organization" required>
+                    </label>
+                    <label class="top">Membership Level
+                        <select name="membership" title="Membership Level">
+                            <option value="">Select Membership Level</option>
+                            <option value="np">NP Membership (Non-profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label class="top">Business/Organization Description
+                        <textarea name="bdesc" title="Business Description"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <input type="submit" value="Join Now!" class="submitBtn">
+            </form>
+
+            <div class="membership-cards">
+                <div class="membership-card np-card">
+                    <h3>NP Membership</h3>
+                    <p>Non-profit Organizations</p>
+                    <p class="price">No Fee</p>
+                    <button type="button" class="info-btn" data-modal="np-modal">Learn More</button>
+                </div>
+                
+                <div class="membership-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Small Businesses</p>
+                    <p class="price">$100/year</p>
+                    <button type="button" class="info-btn" data-modal="bronze-modal">Learn More</button>
+                </div>
+                
+                <div class="membership-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Growing Businesses</p>
+                    <p class="price">$200/year</p>
+                    <button type="button" class="info-btn" data-modal="silver-modal">Learn More</button>
+                </div>
+                
+                <div class="membership-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Established Businesses</p>
+                    <p class="price">$500/year</p>
+                    <button type="button" class="info-btn" data-modal="gold-modal">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Directory listing</li>
+                    <li>Monthly newsletter</li>
+                    <li>Networking events access</li>
+                    <li>Community event promotion</li>
+                    <li>Volunteer opportunities</li>
+                </ul>
+            </div>
+        </div>
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Business directory listing with logo</li>
+                    <li>Monthly business spotlight opportunity</li>
+                    <li>Access to member-only events</li>
+                    <li>Business referral services</li>
+                    <li>10% discount on event tickets</li>
+                </ul>
+            </div>
+        </div>
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Featured business spotlight (2x/year)</li>
+                    <li>Priority event registration</li>
+                    <li>Training workshop access</li>
+                    <li>Social media promotion</li>
+                    <li>20% discount on event tickets</li>
+                    <li>Quarterly business consultation</li>
+                </ul>
+            </div>
+        </div>
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Home page spotlight rotation</li>
+                    <li>VIP event access</li>
+                    <li>Exclusive networking events</li>
+                    <li>Premium advertising opportunities</li>
+                    <li>Free event tickets</li>
+                    <li>Monthly business consultation</li>
+                    <li>Chamber board meeting attendance</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="footer-contact">
+            <p class="footer-title">Mapleton Chamber of Commerce</p>
+            <p>Mapleton, Utah, USA</p>
+            <p>info@mapletoncc.org</p>
+            <p>(801) 489-3240</p>
+        </div>
+        <div id="footer-links">
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com" aria-label="Visit Mapleton Chamber on YouTube">
+                        <img src="images/youtube.svg" alt="YouTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" aria-label="Follow Mapleton Chamber on Twitter">
+                        <img src="images/twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" aria-label="Connect with Mapleton Chamber on LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Andrew L. Parry</p>
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</body>
+</html>
