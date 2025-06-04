@@ -164,6 +164,7 @@ section {
   border-radius: 5px;
   padding: 1rem;
   background-color: var(--light-bg);
+  cursor: pointer;
 }
 
 .course-card h3 {
@@ -175,6 +176,31 @@ section {
 .course-card.completed {
   border-left: 5px solid var(--accent-color);
   background-color: rgba(242, 183, 5, 0.1);
+}
+
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 /* Footer */
