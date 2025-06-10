@@ -1,0 +1,88 @@
+/* Artisan Aromas Site Plan CSS */
+
+:root {
+  --terracotta: #CB997E;
+  --soft-beige: #DDBEA9;
+  --cream: #FFE8D6;
+  --sage-green: #B7B7A4;
+  --muted-olive: #A5A58D;
+  --deep-sage: #6B705C;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--deep-sage);
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: var(--deep-sage);
+}
+
+h1 {
+  background-color: var(--soft-beige);
+  padding: 20px;
+  border-left: 5px solid var(--terracotta);
+}
+
+h2 {
+  border-bottom: 2px solid var(--muted-olive);
+  padding-bottom: 10px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border-left: 4px solid var(--sage-green);
+}
+
+/* Color Palette */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.color-sample-light h3, .color-sample-light p{
+    color: black;
+}
+.color-sample-dark h3, .color-sample-dark p{
+    color: white;
+}
+#color-sample-terracotta {
+    background-color: var(--terracotta);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+#color-sample-soft-beige {
+    background-color: var(--soft-beige);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+#color-sample-cream {
+    background-color: var(--cream);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+#color-sample-sage-green {
+    background-color: var(--sage-green);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+#color-sample-muted-olive {
+    background-color: var(--muted-olive);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+#color-sample-deep-sage {
+    background-color: var(--deep-sage);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.wireframe-image{
+    max-width: 100%;
+}
