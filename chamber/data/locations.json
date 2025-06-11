@@ -1,0 +1,60 @@
+{
+    "attractions":[
+        {
+            "id":1,
+            "name":"Harvest Park Event Center",
+            "address":"2100 Harvest Pkwy, Mapleton, UT 84664",
+            "description":"A premier event venue featuring beautiful indoor and outdoor spaces perfect for weddings, corporate events, and community gatherings. The center offers stunning mountain views and professional event coordination services.",
+            "image":"harvest-park.webp"
+        },
+        {
+            "id":2,
+            "name":"Whiting Campground",
+            "address":"Maple Canyon Rd, Mapleton, UT 84664",
+            "description":"A scenic mountain campground nestled in Mapleton Canyon, offering tent and RV sites surrounded by towering trees and mountain streams. Perfect for family camping, hiking, and enjoying Utah's natural beauty.",
+            "image":"whiting.webp"
+        },
+        {
+            "id":3,
+            "name":"Mapleton Canyon",
+            "address":"Maple Canyon Rd, Mapleton, UT 84664",
+            "description":"A breathtaking canyon offering hiking trails, fishing opportunities, and spectacular views of the Wasatch Mountains. Popular activities include rock climbing, photography, and wildlife viewing in this natural paradise.",
+            "image":"mapleton-canyon.webp"
+        },
+        {
+            "id":4,
+            "name":"Eagle Rock Disc Golf Course",
+            "address":"798 Hawks Rest Dr, Mapleton, UT 84664",
+            "description":"An 18-hole championship disc golf course featuring challenging terrain and beautiful mountain backdrop. The course welcomes players of all skill levels and hosts regular tournaments and community events.",
+            "image":"golf.webp"
+        },
+        {
+            "id":5,
+            "name":"Ira Allan Park",
+            "address":"1728 S 800 W, Mapleton, UT 84664",
+            "description":"A family-friendly community park featuring playgrounds, picnic areas, walking trails, and sports facilities. The park includes basketball courts, tennis courts, and open green spaces for recreation and community events.",
+            "image":"ira-allan-park.webp"
+        },
+        {
+            "id":6,
+            "name":"Mapleton City Park",
+            "address":"W Maple St & N Main St, Mapleton, UT 84664",
+            "description":"The heart of Mapleton's recreational activities, featuring well-maintained facilities for baseball, soccer, and community gatherings. The park hosts annual festivals and provides a central meeting place for residents.",
+            "image":"mapleton-city-park.webp"
+        },
+        {
+            "id":7,
+            "name":"Mapleton Historical Society Museum",
+            "address":"115 S Main St, Mapleton, UT 84664",
+            "description":"Preserving Mapleton's rich heritage through exhibits showcasing local history, pioneer artifacts, and community stories. The museum offers guided tours and educational programs about the area's founding and development.",
+            "image":"mapleton-heritage-museum.webp"
+        },
+        {
+            "id":8,
+            "name":"Mapleton City Cemetery",
+            "address":"620 W Maple St, Mapleton, UT 84664",
+            "description":"A peaceful and well-maintained cemetery serving the Mapleton community since the early settlement days. The grounds feature beautiful landscaping and historical markers telling the stories of Mapleton's founding families.",
+            "image":"mapleton-cemetery.webp"
+        }
+    ]
+}
