@@ -16,10 +16,10 @@
         },
         {
             "id":3,
-            "name":"Mapleton Canyon",
+            "name":"Maple Canyon",
             "address":"Maple Canyon Rd, Mapleton, UT 84664",
             "description":"A breathtaking canyon offering hiking trails, fishing opportunities, and spectacular views of the Wasatch Mountains. Popular activities include rock climbing, photography, and wildlife viewing in this natural paradise.",
-            "image":"mapleton-canyon.webp"
+            "image":"maple-canyon.webp"
         },
         {
             "id":4,

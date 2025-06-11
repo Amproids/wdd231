@@ -1,0 +1,156 @@
+/* Discover Page Styles */
+
+/* Visitor Message */
+#visitor-message {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  border: 2px solid var(--primary-color);
+}
+
+/* Grid Layout for Cards */
+#discover-container {
+  display: grid;
+  gap: 1.5rem;
+  /* Small screens (320px to 640px) - Single column */
+  grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+/* Individual Location Cards */
+.location-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--secondary-color);
+  transition: var(--transition);
+}
+
+.location-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.location-card h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.location-card figure {
+  margin: 0 0 1rem 0;
+}
+
+.location-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.location-card address {
+  color: var(--accent1-color);
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.location-card p {
+  color: var(--dark-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.location-card button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.location-card button:hover {
+  background-color: var(--accent1-color);
+  transform: translateY(-2px);
+}
+
+/* Medium screens (641px to 1024px) - Two columns */
+@media (min-width: 641px) and (max-width: 1024px) {
+  #discover-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+
+  /* Image hover effects for non-mobile */
+  .location-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
+/* Large screens (1025px and above) - Three columns */
+@media (min-width: 1025px) {
+  #discover-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 .";
+  }
+
+  /* Image hover effects for desktop */
+  .location-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1) contrast(1.1);
+  }
+}
+
+/* Error State */
+.error {
+  text-align: center;
+  color: var(--accent1-color);
+  font-weight: 600;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--accent1-color);
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .location-card {
+  background-color: var(--light-gray);
+  border-color: var(--dark-gray);
+}
+
+body.dark-mode #visitor-message {
+  background-color: var(--light-gray);
+  border-color: var(--dark-gray);
+  color: var(--dark-gray);
+}
+
+body.dark-mode .error {
+  background-color: var(--light-gray);
+  border-color: var(--accent1-color);
+}
