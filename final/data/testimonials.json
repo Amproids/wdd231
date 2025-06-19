@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah M.",
+    "location": "Portland, OR",
+    "rating": 5,
+    "review": "The Autumn Spice candle is absolutely divine! It fills my entire living room with the most wonderful warm scent. I've already ordered three more!",
+    "product": "Autumn Spice",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "Jessica L.",
+    "location": "Austin, TX",
+    "rating": 4,
+    "review": "I'm obsessed with the Hot Girl Summer candle! Perfect for my summer vibes. The coconut and pineapple blend is chef's kiss. Can't wait for it to be back in stock!",
+    "product": "Hot Girl Summer",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "name": "Michael R.",
+    "location": "Denver, CO",
+    "rating": 5,
+    "review": "Bought the Self Care candle for my wife and she loves it! The eucalyptus and lavender combination is so relaxing. Great quality and burns evenly.",
+    "product": "Self Care",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "name": "Amanda K.",
+    "location": "Seattle, WA",
+    "rating": 5,
+    "review": "The Vanilla Milk Shake candle smells exactly like a creamy vanilla dessert! Burns for hours and the scent lasts. Artisan Aromas has a customer for life!",
+    "product": "Vanilla Milk Shake",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "name": "David P.",
+    "location": "Miami, FL",
+    "rating": 4,
+    "review": "At The Beach really does transport you to a tropical paradise. The mahogany wood adds such a nice depth to the coconut scent. Highly recommend!",
+    "product": "At The Beach",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "name": "Emily S.",
+    "location": "Nashville, TN",
+    "rating": 5,
+    "review": "I love supporting small businesses and Artisan Aromas exceeded my expectations! The Pina Colada candle is my new favorite. Amazing quality!",
+    "product": "Pina Colada",
+    "verified": true
+  }
+]

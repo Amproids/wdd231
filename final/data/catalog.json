@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Summer Sunset",
+    "size": "5.5oz",
+    "image": "images/summer-sunset.webp",
+    "price": "$18.99",
+    "scents": ["Mango", "Citrus"],
+    "featured": true,
+    "seasonal": true,
+    "inStock": true
+  },
+  {
+    "name": "At The Beach",
+    "size": "5.5oz",
+    "image": "images/at-the-beach.webp",
+    "price": "$22.99",
+    "scents": ["Mahogany Wood", "Coconut", "Fresh Breeze"],
+    "featured": true,
+    "seasonal": true,
+    "inStock": true
+  },
+  {
+    "name": "Hot Girl Summer",
+    "size": "5.5oz",
+    "image": "images/hot-girl-summer.webp",
+    "price": "$22.99",
+    "scents": ["Coconut", "Pineapple", "Vanilla"],
+    "featured": true,
+    "seasonal": true,
+    "inStock": false
+  },
+  {
+    "name": "Hot Girl Summer",
+    "size": "14oz",
+    "image": "images/hot-girl-summer.webp",
+    "price": "$39.99",
+    "scents": ["Coconut", "Pineapple", "Vanilla"],
+    "featured": false,
+    "seasonal": true,
+    "inStock": true
+  },
+  {
+    "name": "Autumn Spice",
+    "size": "5.5oz",
+    "image": "images/autumn-spice.webp",
+    "price": "$19.99",
+    "scents": ["Cinnamon", "Clove", "Orange Peel"],
+    "featured": true,
+    "limited": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Autumn Spice",
+    "size": "14oz",
+    "image": "images/autumn-spice.webp",
+    "price": "$34.99",
+    "scents": ["Cinnamon", "Clove", "Orange Peel"],
+    "featured": true,
+    "limited": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Self Care",
+    "size": "5.5oz",
+    "image": "images/self-care.webp",
+    "price": "$21.99",
+    "scents": ["Eucalyptus", "Lavender", "Lemon"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Self Care",
+    "size": "14oz",
+    "image": "images/self-care.webp",
+    "price": "$37.99",
+    "scents": ["Eucalyptus", "Lavender", "Lemon"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Tea Party",
+    "size": "5.5oz",
+    "image": "images/tea-party.webp",
+    "price": "$20.99",
+    "scents": ["Cherry Blossom", "Lavender", "Brown Sugar"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Milk Shake",
+    "size": "5.5oz",
+    "image": "images/vanilla-milk-shake.webp",
+    "price": "$20.99",
+    "scents": ["Vanilla", "Honey", "Goat's Milk"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Milk Shake",
+    "size": "14oz",
+    "image": "images/vanilla-milk-shake.webp",
+    "price": "$36.99",
+    "scents": ["Vanilla", "Honey", "Goat's Milk"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Pina Colada",
+    "size": "5.5oz",
+    "image": "images/pina-colada.webp",
+    "price": "$22.99",
+    "scents": ["Pineapple", "Vanilla", "Coconut", "Honey"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Citrus Circus",
+    "size": "5.5oz",
+    "image": "images/citrus-circus.webp",
+    "price": "$21.99",
+    "scents": ["Orange", "Lemon", "Grapefruit", "Goat's Milk"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Strawberry Fields",
+    "size": "5.5oz",
+    "image": "images/strawberry-fields.webp",
+    "price": "$22.99",
+    "scents": ["Strawberry", "Vanilla", "Goat's Milk", "Fresh Breeze"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Oak Forest",
+    "size": "5.5oz",
+    "image": "images/oak-forest.webp",
+    "price": "$21.99",
+    "scents": ["Eucalyptus", "Mahogany Wood", "Vanilla"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  },
+  {
+    "name": "Friday Night",
+    "size": "5.5oz",
+    "image": "images/friday-night.webp",
+    "price": "$23.99",
+    "scents": ["Cedar", "Cherry Blossom", "Vanilla", "Brown Sugar"],
+    "featured": false,
+    "seasonal": false,
+    "inStock": true
+  }
+]

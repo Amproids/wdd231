@@ -1,0 +1,401 @@
+/* Artisan Aromas - Catalog Page Styles */
+
+/* Catalog Hero */
+.catalog-hero {
+  background: linear-gradient(135deg, var(--soft-beige) 0%, var(--cream) 100%);
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.catalog-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--deep-sage);
+}
+
+.catalog-hero p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  color: var(--deep-sage);
+  opacity: 0.9;
+}
+
+/* Filter Controls */
+.catalog-filters {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-controls label {
+  font-weight: 600;
+  color: var(--deep-sage);
+  margin-right: 0.5rem;
+}
+
+.filter-controls select {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--sage-green);
+  border-radius: 4px;
+  background-color: white;
+  color: var(--deep-sage);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-controls select:hover,
+.filter-controls select:focus {
+  border-color: var(--terracotta);
+  outline: none;
+}
+
+/* Products Grid */
+.catalog-products {
+  padding: 0 1rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Cards */
+.product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.product-card.out-of-stock {
+  opacity: 0.7;
+}
+
+.product-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.stock-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(114, 28, 36, 0.9);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.product-badges {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.product-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.featured-badge {
+  background-color: var(--terracotta);
+  color: white;
+}
+
+.seasonal-badge {
+  background-color: var(--sage-green);
+  color: white;
+}
+
+.limited-badge {
+  background-color: var(--deep-sage);
+  color: white;
+}
+
+/* Product Info */
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-info h3 {
+  color: var(--deep-sage);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-size {
+  font-size: 0.9rem;
+  color: var(--muted-olive);
+  margin-bottom: 0.5rem;
+}
+
+.product-scents {
+  font-size: 0.9rem;
+  color: var(--deep-sage);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.product-price {
+  font-weight: 600;
+  color: var(--terracotta);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart:disabled {
+  background-color: var(--sage-green);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* No Products Message */
+.no-products {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--muted-olive);
+  padding: 3rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Modal Product Details */
+.modal-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.modal-product-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-product-details h2 {
+  margin-bottom: 1rem;
+  color: var(--deep-sage);
+}
+
+.modal-size, .modal-price {
+  margin-bottom: 1rem;
+}
+
+.modal-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--terracotta);
+}
+
+.modal-scents {
+  margin-bottom: 1.5rem;
+}
+
+.modal-scents h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--deep-sage);
+}
+
+.modal-scents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-scents li {
+  padding: 0.25rem 0;
+  color: var(--muted-olive);
+}
+
+.modal-scents li:before {
+  content: "• ";
+  color: var(--terracotta);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.modal-badges {
+  margin-bottom: 1.5rem;
+}
+
+.modal-badges .product-badge {
+  position: static;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Favorites Button for Catalog */
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.favorite-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.favorite-btn.favorited {
+  background: rgba(203, 153, 126, 0.9);
+  color: white;
+}
+
+.favorite-btn.favorited:hover {
+  background: rgba(203, 153, 126, 1);
+}
+
+/* Adjust product badges positioning to not overlap with favorites */
+.product-badges {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  z-index: 5;
+}
+
+/* Make sure stock label doesn't overlap */
+.stock-label {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background-color: rgba(114, 28, 36, 0.9);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .catalog-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .catalog-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .filter-controls select {
+    width: 100%;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .modal-product {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .modal-product-image img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .product-info {
+    padding: 1rem;
+  }
+  
+  .product-image {
+    height: 200px;
+  }
+}

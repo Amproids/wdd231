@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artisan Aromas - Home</title>
-    <meta name="description" content="Welcome to Artisan Aromas, the best place to sweeten up your home!">
+    <title>Catalog - Artisan Aromas</title>
+    <meta name="description" content="Browse our complete collection of handcrafted candles. Find the perfect scent for your home.">
     <meta name="author" content="Andrew L. Parry">
     <link rel="icon" href="images/icon.svg" type="image/svg+xml">
-    <meta property="og:title" content="Artisan Aromas - Home">
+    <meta property="og:title" content="Catalog - Artisan Aromas">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://amproids.github.io/wdd231/final/images/icon.svg">
-    <meta property="og:url" content="https://amproids.github.io/wdd231/final/index.html">
-    <meta property="og:description" content="Welcome to Artisan Aromas, the best place to sweeten up your home!">
+    <meta property="og:url" content="https://amproids.github.io/wdd231/final/catalog.html">
+    <meta property="og:description" content="Browse our complete collection of handcrafted candles. Find the perfect scent for your home.">
    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/catalog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
@@ -27,54 +27,41 @@
         <nav>
             <button id="menu-button" aria-label="Toggle Menu">☰</button>
             <ul id="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
    
     <main>
-        <section class="hero">
-            <h1>Welcome to Artisan Aromas</h1>
-            <p>Discover handcrafted candles that transform your space into a sanctuary of warmth and fragrance.</p>
+        <section class="catalog-hero">
+            <h1>Our Complete Collection</h1>
+            <p>Discover all our handcrafted candles, each one made with care and attention to detail.</p>
         </section>
 
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div class="product-grid" id="product-grid">
+        <div class="catalog-filters">
+            <div class="filter-controls">
+                <label for="category-filter">Filter by Category:</label>
+                <select id="category-filter">
+                    <option value="all">All Products</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                
+                <label for="sort-options">Sort by:</label>
+                <select id="sort-options">
+                    <option value="name">Name</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="catalog-products">
+            <div class="products-grid" id="catalog-grid">
                 <!-- Products will be dynamically loaded here via JavaScript -->
             </div>
-        </section>
-
-        <section class="features">
-            <h2>Why Choose Artisan Aromas?</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <h3>100% Natural Soy Wax</h3>
-                    <p>Our candles are made with premium soy wax that burns cleaner and longer than traditional paraffin candles.</p>
-                </div>
-                <div class="feature">
-                    <h3>Hand-Poured Craftsmanship</h3>
-                    <p>Each candle is carefully hand-poured in small batches to ensure quality and attention to detail.</p>
-                </div>
-                <div class="feature">
-                    <h3>Premium Fragrances</h3>
-                    <p>We use only the finest fragrance oils, carefully blended to create unique and captivating scents.</p>
-                </div>
-                <div class="feature">
-                    <h3>Eco-Friendly Materials</h3>
-                    <p>From recyclable packaging to sustainable wicks, we're committed to environmental responsibility.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial-grid">
-                <!-- Testimonials will be dynamically loaded here via JavaScript -->
-            </div>
-        </section>
+        </div>
     </main>
    
     <footer>
@@ -116,9 +103,7 @@
         </div>
     </div>
 
-
     <script src="scripts/main.js" type="module"></script>
-    <script src="scripts/featured.js" type="module"></script>
-    <script src="scripts/testimonials.js" type="module"></script>
+    <script src="scripts/catalog.js" type="module"></script>
 </body>
 </html>
